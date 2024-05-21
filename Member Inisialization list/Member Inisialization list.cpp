@@ -15,11 +15,21 @@ public:
     mahasiswa (int pId, string pNama, float pNilai) :id(pId), nama(pNama), nilai(pNilai) { //Member
     //Definisi
     }
+
+
+    ~mahasiswa() {
+        cout << "Id    =  " << Id << endl;
+        cout << "Nama  =  " << nama << endl;
+        cout << "Nilai =  " << nilai << endl;
+
+    }
+
 };
 
 
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    mahasiswa mhs(12, "Asroni", 98.5);
+    return 0;
 }
